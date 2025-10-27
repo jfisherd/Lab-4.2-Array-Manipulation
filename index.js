@@ -34,15 +34,20 @@ function addItem(item) {
 // addItem("Alice") // PLACEHOLDER FUNCTION CALLS FOR DEV TESTING
 // displayList()
 
+// function filterItems(searchTerm) { //PLACEHOLDER, WORKING TASK 2 FUNCTION FOR DEV TESTING, DO NOT REMOVE
+//     shoppingListFiltered = []
+//     for (i=0;i<shoppingList.length;i++) {
+//         if (shoppingList[i].includes(searchTerm)) {
+//             shoppingListFiltered.push(shoppingList[i])
+//         }
+//     }
+//     return shoppingListFiltered
+// }
+
 function filterItems(searchTerm) {
-    shoppingListFiltered = []
-    for (i=0;i<shoppingList.length;i++) {
-        if (shoppingList[i].includes(searchTerm)) {
-            shoppingListFiltered.push(shoppingList[i])
-        }
-    }
-    return shoppingListFiltered
+  return shoppingList.filter(x=>x.includes(searchTerm))
 }
+
 // console.log(filterItems("a")) // PLACEHOLDER FUNCTION CALL FOR DEV TESTING
 
 // Task 3
