@@ -43,7 +43,7 @@ addItemButton.addEventListener("click", function () {
   }
   addItem(itemText)
   updateCart()
-  itemInput.value = "" // Clear the input field
+  itemInput.value = "" 
 })
 
 removeItemButton.addEventListener("click", function () {
